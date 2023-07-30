@@ -1,0 +1,16 @@
+IF next-is-empty THEN
+    move
+END IF
+
+IF next-is-enemy THEN
+    infect
+END IF
+
+IF next-is-wall THEN
+    turnright
+END IF
+
+IF next-is-friend THEN
+    skip
+END IF
+

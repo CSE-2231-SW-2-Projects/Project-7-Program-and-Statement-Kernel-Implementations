@@ -1,0 +1,35 @@
+PROGRAM Test-FourInstructions IS
+    INSTRUCTION AttackEnemy IS
+        WHILE next-is-enemy DO
+            infect
+        END WHILE
+    END AttackEnemy
+    
+    INSTRUCTION FindWay IS
+        WHILE next-is-not-empty DO
+            turnleft
+        END WHILE
+    END FindWay
+    
+    INSTRUCTION FindObstacle IS
+        WHILE next-is-empty DO
+            move
+        END WHILE
+    END FindObstacle
+    
+    INSTRUCTION AvoidFriend IS
+        WHILE next-is-friend DO
+            skip
+        END WHILE
+    END AvoidFriend
+        
+    
+    BEGIN
+        WHILE true DO
+            FindObstacle
+            AttackEnemy
+            AvoidFriend
+            findWay
+        END WHILE
+ END Test-FourInstructions
+    

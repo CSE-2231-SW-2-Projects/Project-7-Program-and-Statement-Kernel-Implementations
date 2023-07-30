@@ -1,0 +1,13 @@
+PROGRAM Test-OneInstruction IS
+    INSTRUCTION AttackEnemy IS
+        WHILE next-is-enemy DO
+            infect
+        END WHILE
+    END AttackEnemy
+    
+    BEGIN
+        WHILE true DO
+            AttackEnemy
+        END WHILE
+ END Test-OneInstruction
+    

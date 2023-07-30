@@ -1,0 +1,20 @@
+PROGRAM Test-TwoInstructions IS
+    INSTRUCTION AttackEnemy IS
+        WHILE next-is-enemy DO
+            infect
+        END WHILE
+    END AttackEnemy
+    
+    INSTRUCTION FindWay IS
+        WHILE next-is-not-empty DO
+            turnleft
+        END WHILE
+    END FindWay
+    
+    BEGIN
+        WHILE true DO
+            AttackEnemy
+            FindWay
+        END WHILE
+ END Test-TwoInstructions
+    

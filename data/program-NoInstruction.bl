@@ -1,0 +1,8 @@
+PROGRAM Test-NoInstruction IS
+    
+    BEGIN
+        WHILE next-is-enemy DO
+            infect
+        END WHILE
+ END Test-NoInstruction
+    
